@@ -9,24 +9,40 @@
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/test.js"></script>
 </head>
-  <body>
+  <body onload="myFunction()" style="margin:0;">
 
       <div class="container">
-	<div class="row">
-		<div id="loader">
-    		<div class="dot"></div>
-			<div class="dot"></div>
-			<div class="dot"></div>
-			<div class="dot"></div>
-			<div class="dot"></div>
-			<div class="dot"></div>
-			<div class="dot"></div>
-			<div class="dot"></div>
-			<div class="lading"></div>
-		</div>
-	</div>
-</div>
+        <div class="row">
+            <div id="loader">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="lading"></div>
+            </div>
+        </div>
+      </div>
       
+      <div style="display:none;" id="myDiv" class="animate-bottom">
+          <h2>Tada!</h2>
+          <p>Some text in my newly loaded page..</p>
+      </div>
+      <script>
+            var myVar;
+
+            function myFunction() {
+              myVar = setTimeout(showPage, 3000);
+            }
+
+            function showPage() {
+              document.getElementById("loader").style.display = "none";
+              document.getElementById("myDiv").style.display = "block";
+            }
+      </script>
     <script>
       // You can also require other files to run in this process
       require('./renderer.js')
