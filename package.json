@@ -1,0 +1,25 @@
+{
+  "name": "polar",
+  "version": "1.0.0",
+  "description": "Opis app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "-"
+  },
+  "keywords": [
+    "kljucne",
+    "rijeci"
+  ],
+  "author": "refik",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^4.0.1"
+  },
+  "dependencies": {
+    "mysql": "^2.16.0"
+  }
+}
