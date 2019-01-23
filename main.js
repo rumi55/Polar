@@ -1,5 +1,5 @@
 const {app, BrowserWindow, Menu} = require('electron');
-const TabGroup = require("electron-tabs");
+
 let mainWindow;
 let menuTemplate = [
     {
@@ -16,12 +16,6 @@ let menuTemplate = [
         ]
     }
 ];
-let tabGroup = new TabGroup();
-let tab = tabGroup.addTab({
-    title: "Electron",
-    src: "http://electron.atom.io",
-    visible: true
-});
 function appInit () {
   // Create the browser window.
   mainWindow = new BrowserWindow({width: 800, height: 600,icon: __dirname + '/assets/icon512.png'})
