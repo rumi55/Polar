@@ -10,90 +10,122 @@
     <script type="text/javascript" src="assets/js/test.js"></script>
 </head>
   <body>
-<div class="container" style="margin-top: 1em;">
-    <!-- Sign up form -->
-    <form>
-        <!-- Sign up card -->
-        <div class="card person-card">
-            <div class="card-body">
-                <!-- Sex image -->
-                <img id="img_sex" class="person-img"
-                    src="https://visualpharm.com/assets/217/Life%20Cycle-595b40b75ba036ed117d9ef0.svg">
-                <h2 id="who_message" class="card-title">Who are you ?</h2>
-                <!-- First row (on medium screen) -->
+
+      <div class="container register">
                 <div class="row">
-                    <div class="form-group col-md-2">
-                        <select id="input_sex" class="form-control">
-                            <option value="Mr.">Mr.</option>
-                            <option value="Ms.">Ms.</option>
-                        </select>
+                    <div class="col-md-3 register-left">
+                        <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                        <h3>Welcome</h3>
+                        <p>You are 30 seconds away from earning your own money!</p>
+                        <input type="submit" name="" value="Login"/><br/>
                     </div>
-                    <div class="form-group col-md-5">
-                        <input id="first_name" type="text" class="form-control" placeholder="First name">
-                        <div id="first_name_feedback" class="invalid-feedback">
-                            
-                        </div>
-                    </div>
-                    <div class="form-group col-md-5">
-                        <input id="last_name" type="text" class="form-control" placeholder="Last name">
-                        <div id="last_name_feedback" class="invalid-feedback">
-                            
+                    <div class="col-md-9 register-right">
+                        <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Employee</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Hirer</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="register-heading">Apply as a Employee</h3>
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="First Name *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Password *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control"  placeholder="Confirm Password *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="maxl">
+                                                <label class="radio inline"> 
+                                                    <input type="radio" name="gender" value="male" checked>
+                                                    <span> Male </span> 
+                                                </label>
+                                                <label class="radio inline"> 
+                                                    <input type="radio" name="gender" value="female">
+                                                    <span>Female </span> 
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Your Email *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Your Phone *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option class="hidden"  selected disabled>Please select your Sequrity Question</option>
+                                                <option>What is your Birthdate?</option>
+                                                <option>What is Your old Phone Number</option>
+                                                <option>What is your Pet Name?</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Enter Your Answer *" value="" />
+                                        </div>
+                                        <input type="submit" class="btnRegister"  value="Register"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <h3  class="register-heading">Apply as a Hirer</h3>
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="First Name *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" maxlength="10" minlength="10" class="form-control" placeholder="Phone *" value="" />
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Password *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Confirm Password *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control">
+                                                <option class="hidden"  selected disabled>Please select your Sequrity Question</option>
+                                                <option>What is your Birthdate?</option>
+                                                <option>What is Your old Phone Number</option>
+                                                <option>What is your Pet Name?</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="`Answer *" value="" />
+                                        </div>
+                                        <input type="submit" class="btnRegister"  value="Register"/>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-6" style="padding=0.5em;">
-                <div class="card">
-                    <div class="card-body">
-                        <h2 class="card-title">How to contact you ?</h2>
-                        <div class="form-group">
-                            <label for="email" class="col-form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="example@gmail.com" required>
-                            <div class="email-feedback">
-                            
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="tel" class="col-form-label">Phone number</label>
-                            <input type="text" class="form-control" id="tel" placeholder="+33 6 99 99 99 99" required>
-                            <div class="phone-feedback">
-                            
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                
-            <div class="col-md-6">
-                <div class="card"> 
-                    <div class="card-body">
-                        <h2 class="card-title">Securize your account !</h2>
-                        <div class="form-group">
-                            <label for="password" class="col-form-label">Pasword</label>
-                            <input type="password" class="form-control" id="password" placeholder="Type your password" required>
-                            <div class="password-feedback">
-                            
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="password_conf" class="col-form-label">Pasword (confirm)</label>
-                            <input type="password" class="form-control" id="password_conf" placeholder="Type your password again" required>
-                            <div class="password_conf-feedback">
-                            
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div style="margin-top: 1em;">
-            <button type="button" class="btn btn-primary btn-lg btn-block">Sign up !</button>
-        </div>
-        </form>
-</div>
     <script>
       // You can also require other files to run in this process
       require('./renderer.js')
