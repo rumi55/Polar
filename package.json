@@ -20,6 +20,7 @@
     "electron": "^4.0.1"
   },
   "dependencies": {
+    "electron-tabs": "^0.9.5",
     "mysql": "^2.16.0"
   }
 }
